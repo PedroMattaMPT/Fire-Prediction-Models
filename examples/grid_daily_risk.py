@@ -31,7 +31,7 @@ def one_cell(lat: float, lon: float, model: str | None) -> None:
     print(f"{svc.model.name}, cell {int(run.daily['cell'].iloc[0])} ({lat}, {lon}); FWI state: {run.state_start}")
     cols = ["day", "probability", "tier", "fwi", "ffmc", "dc", "rain_720h", "days_since_rain"]
     num = {c: "float64" for c in cols if c not in ("day", "tier")}
-    print(run.daily[cols].astype(num).round(3).to_string(index=False))
+    print(run.daily[cols].astype(num).round({c: 3 for c in num}).to_string(index=False))
 
 
 def main() -> None:
