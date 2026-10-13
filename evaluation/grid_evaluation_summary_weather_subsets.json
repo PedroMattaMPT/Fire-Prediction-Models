@@ -1,0 +1,162 @@
+{
+ "test": {
+  "start": "2022-01-05 00:00:00",
+  "end": "2024-01-01 00:00:00",
+  "cells": 1036,
+  "cell_set": "all",
+  "hours": 17424,
+  "days": 726,
+  "target": "y_any",
+  "include_rekindles": true,
+  "fire_cell_hours": 15252,
+  "fire_cell_days": 14417,
+  "hourly_prevalence": 0.0008449269812906176,
+  "daily_prevalence": 0.019168075986257804
+ },
+ "variants": {
+  "all weather": {
+   "without": [],
+   "n_features": 50,
+   "hourly_pr_auc": null,
+   "hourly_roc_auc": null,
+   "daily_pr_auc": 0.223226760386296,
+   "daily_roc_auc": 0.8916530921413783,
+   "precision_10_per_day": 0.1921487603305785,
+   "precision_top1%_celldays": 0.3731720287157671,
+   "median_rank_ge100ha": 131.5,
+   "calibration_worst_bin": 1.322476936206801
+  },
+  "no wind": {
+   "without": [
+    "wind_speed"
+   ],
+   "n_features": 45,
+   "hourly_pr_auc": null,
+   "hourly_roc_auc": null,
+   "daily_pr_auc": 0.2207833914968202,
+   "daily_roc_auc": 0.8910097710312987,
+   "precision_10_per_day": 0.19146005509641872,
+   "precision_top1%_celldays": 0.36519542674820527,
+   "median_rank_ge100ha": 137.5,
+   "calibration_worst_bin": 1.4844116664353424,
+   "vs_all_weather": {
+    "daily_pr_auc": {
+     "diff": -0.0024253077723709895,
+     "ci": [
+      -0.0039245957498496836,
+      -0.0008085913848658164
+     ],
+     "a_better_share": 0.0033333333333333335
+    },
+    "topk10_precision": {
+     "diff": -0.0006799816345270884,
+     "ci": [
+      -0.005371900826446272,
+      0.0045523415977961525
+     ],
+     "a_better_share": 0.37666666666666665
+    }
+   }
+  },
+  "no rain": {
+   "without": [
+    "precip"
+   ],
+   "n_features": 37,
+   "hourly_pr_auc": null,
+   "hourly_roc_auc": null,
+   "daily_pr_auc": 0.1998966608376309,
+   "daily_roc_auc": 0.8823607045593019,
+   "precision_10_per_day": 0.18016528925619835,
+   "precision_top1%_celldays": 0.33342196224408405,
+   "median_rank_ge100ha": 141.5,
+   "calibration_worst_bin": 1.2423997163719973,
+   "vs_all_weather": {
+    "daily_pr_auc": {
+     "diff": -0.02331901637273006,
+     "ci": [
+      -0.02907832222584077,
+      -0.018106341357877254
+     ],
+     "a_better_share": 0.0
+    },
+    "topk10_precision": {
+     "diff": -0.012189623507805326,
+     "ci": [
+      -0.017768595041322305,
+      -0.0064015151515151554
+     ],
+     "a_better_share": 0.0
+    }
+   }
+  },
+  "temperature + humidity only": {
+   "without": [
+    "wind_speed",
+    "precip"
+   ],
+   "n_features": 35,
+   "hourly_pr_auc": null,
+   "hourly_roc_auc": null,
+   "daily_pr_auc": 0.1991318314061283,
+   "daily_roc_auc": 0.8816772874792742,
+   "precision_10_per_day": 0.1827823691460055,
+   "precision_top1%_celldays": 0.3336878489763361,
+   "median_rank_ge100ha": 152.0,
+   "calibration_worst_bin": 1.1690717943971227,
+   "vs_all_weather": {
+    "daily_pr_auc": {
+     "diff": -0.024010718298324917,
+     "ci": [
+      -0.029898831328326308,
+      -0.018421190118893167
+     ],
+     "a_better_share": 0.0
+    },
+    "topk10_precision": {
+     "diff": -0.009372359963269053,
+     "ci": [
+      -0.01522382920110194,
+      -0.003298898071625362
+     ],
+     "a_better_share": 0.0
+    }
+   }
+  },
+  "no weather": {
+   "without": [
+    "temp",
+    "humidity",
+    "wind_speed",
+    "precip"
+   ],
+   "n_features": 29,
+   "hourly_pr_auc": null,
+   "hourly_roc_auc": null,
+   "daily_pr_auc": 0.15264187136222504,
+   "daily_roc_auc": 0.8469157547677033,
+   "precision_10_per_day": 0.17575757575757575,
+   "precision_top1%_celldays": 0.2810422759904281,
+   "median_rank_ge100ha": 148.0,
+   "calibration_worst_bin": 1.4327434555017977,
+   "vs_all_weather": {
+    "daily_pr_auc": {
+     "diff": -0.07058684132879824,
+     "ci": [
+      -0.08342340277492012,
+      -0.05977540181074072
+     ],
+     "a_better_share": 0.0
+    },
+    "topk10_precision": {
+     "diff": -0.016285583103764923,
+     "ci": [
+      -0.02307506887052343,
+      -0.009845041322314048
+     ],
+     "a_better_share": 0.0
+    }
+   }
+  }
+ }
+}

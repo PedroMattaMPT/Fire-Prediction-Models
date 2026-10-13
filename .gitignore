@@ -1,0 +1,23 @@
+# --- Python -----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# --- Virtual environments ---------------------------------------------------
+.venv/
+venv/
+
+# --- Runtime state ----------------------------------------------------------
+# The live service keeps its Open-Meteo cache, FWI state and daily tables here.
+.cache/
+
+# --- Notebooks / OS -----------------------------------------------------------
+.ipynb_checkpoints/
+.DS_Store
+
+# outputs/ is NOT ignored: outputs/models/grid/ (the trained models) and
+# outputs/store/portugal/ (the serving pack) are part of this repository.
+outputs/sensors/
+outputs/figures/

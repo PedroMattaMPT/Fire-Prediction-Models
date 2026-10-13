@@ -1,0 +1,25 @@
+{
+ "format_version": 1,
+ "region": "portugal",
+ "start": "2014-01-01 00:00:00",
+ "n_hours": 87648,
+ "n_cells": 1036,
+ "years": [
+  2014,
+  2015,
+  2016,
+  2017,
+  2018,
+  2019,
+  2020,
+  2021,
+  2022,
+  2023
+ ],
+ "variables": [],
+ "grid_step": 0.1,
+ "max_land_snap_deg": 0.15,
+ "built": "2026-09-28T00:19:59+00:00",
+ "build_seconds": 52.1,
+ "serving_pack": true
+}

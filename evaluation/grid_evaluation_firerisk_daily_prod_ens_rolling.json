@@ -1,0 +1,3141 @@
+{
+ "protocol": "current",
+ "mode": "rolling_origin",
+ "per_year": {
+  "2019": {
+   "model": "firerisk_daily",
+   "grid": {
+    "start": "2019-01-01 00:00:00",
+    "end": "2020-01-01 00:00:00",
+    "cells": 1036,
+    "cell_set": "all",
+    "hours": 8760,
+    "days": 365,
+    "target": "y_any",
+    "include_rekindles": true,
+    "fire_cell_hours": 8058,
+    "fire_cell_days": 8523,
+    "hourly_prevalence": 0.0008878986618712646,
+    "daily_prevalence": 0.022539271169408157
+   },
+   "daily": {
+    "pr_auc": 0.1996077433045091,
+    "roc_auc": 0.8707126999130305,
+    "topk": {
+     "10": {
+      "precision": 0.19342465753424656,
+      "recall": 0.08283468262348938
+     },
+     "25": {
+      "precision": 0.15758904109589042,
+      "recall": 0.16871993429543589
+     },
+     "50": {
+      "precision": 0.12734246575342464,
+      "recall": 0.27267394110055143
+     }
+    },
+    "adaptive": {
+     "1%": {
+      "precision": 0.3450555261766261,
+      "recall": 0.15311510031678988,
+      "threshold": 0.3794335126876831,
+      "cells_per_day": 10.361643835616439
+     },
+     "5%": {
+      "precision": 0.18495795208123975,
+      "recall": 0.4103015370174821,
+      "threshold": 0.1833738386631012,
+      "cells_per_day": 51.8
+     }
+    }
+   },
+   "slices": {
+    "month": {
+     "1": {
+      "fire_cell_days": 343,
+      "pr_auc": 0.1686333532401298,
+      "prevalence": 0.010680034873583261,
+      "recall_top5%": 0.4461942257217848
+     },
+     "2": {
+      "fire_cell_days": 406,
+      "pr_auc": 0.2134133230557298,
+      "prevalence": 0.013996138996138996,
+      "recall_top5%": 0.5482456140350878
+     },
+     "3": {
+      "fire_cell_days": 961,
+      "pr_auc": 0.27394642621243365,
+      "prevalence": 0.029922779922779922,
+      "recall_top5%": 0.6773913043478261
+     },
+     "4": {
+      "fire_cell_days": 183,
+      "pr_auc": 0.06276013601481542,
+      "prevalence": 0.005888030888030888,
+      "recall_top5%": 0.16494845360824742
+     },
+     "5": {
+      "fire_cell_days": 947,
+      "pr_auc": 0.16084321125776185,
+      "prevalence": 0.02948686013202142,
+      "recall_top5%": 0.3656927426955702
+     },
+     "6": {
+      "fire_cell_days": 970,
+      "pr_auc": 0.11907119066679,
+      "prevalence": 0.03120978120978121,
+      "recall_top5%": 0.2808349146110057
+     },
+     "7": {
+      "fire_cell_days": 1201,
+      "pr_auc": 0.1617691532636486,
+      "prevalence": 0.03739569062149707,
+      "recall_top5%": 0.3623718887262079
+     },
+     "8": {
+      "fire_cell_days": 1295,
+      "pr_auc": 0.15896291499721935,
+      "prevalence": 0.04032258064516129,
+      "recall_top5%": 0.424
+     },
+     "9": {
+      "fire_cell_days": 1537,
+      "pr_auc": 0.3494408627893041,
+      "prevalence": 0.049453024453024456,
+      "recall_top5%": 0.6448736998514116
+     },
+     "10": {
+      "fire_cell_days": 599,
+      "pr_auc": 0.1372460343618133,
+      "prevalence": 0.018651139618881554,
+      "recall_top5%": 0.2916030534351145
+     },
+     "11": {
+      "fire_cell_days": 49,
+      "pr_auc": 0.018780225848197104,
+      "prevalence": 0.0015765765765765765,
+      "recall_top5%": 0.0
+     },
+     "12": {
+      "fire_cell_days": 32,
+      "pr_auc": 0.007123686504814374,
+      "prevalence": 0.0009963880931622867,
+      "recall_top5%": 0.0
+     }
+    },
+    "district": {
+     "Faro": {
+      "fire_cell_days": 398,
+      "pr_auc": 0.0816778684812842,
+      "prevalence": 0.017587273530711444
+     },
+     "Beja": {
+      "fire_cell_days": 364,
+      "pr_auc": 0.07936919873023186,
+      "prevalence": 0.00898432679254597
+     },
+     "Set\u00fabal": {
+      "fire_cell_days": 358,
+      "pr_auc": 0.10869268787673077,
+      "prevalence": 0.01486093814860938
+     },
+     "\u00c9vora": {
+      "fire_cell_days": 298,
+      "pr_auc": 0.09746233355720628,
+      "prevalence": 0.010205479452054795
+     },
+     "Lisboa": {
+      "fire_cell_days": 554,
+      "pr_auc": 0.1934797268664786,
+      "prevalence": 0.04743150684931507
+     },
+     "Santar\u00e9m": {
+      "fire_cell_days": 627,
+      "pr_auc": 0.11850246922417298,
+      "prevalence": 0.02563892864444899
+     },
+     "Portalegre": {
+      "fire_cell_days": 261,
+      "pr_auc": 0.08129801979100568,
+      "prevalence": 0.010071387227474436
+     },
+     "Leiria": {
+      "fire_cell_days": 449,
+      "pr_auc": 0.12324113058423763,
+      "prevalence": 0.026173127368114252
+     },
+     "Castelo Branco": {
+      "fire_cell_days": 419,
+      "pr_auc": 0.09347895093586292,
+      "prevalence": 0.015725276787389754
+     },
+     "Coimbra": {
+      "fire_cell_days": 285,
+      "pr_auc": 0.07771009186532686,
+      "prevalence": 0.016974389517569983
+     },
+     "Guarda": {
+      "fire_cell_days": 263,
+      "pr_auc": 0.04454247804172534,
+      "prevalence": 0.011437268971515547
+     },
+     "Aveiro": {
+      "fire_cell_days": 662,
+      "pr_auc": 0.2766237923148289,
+      "prevalence": 0.056678082191780825
+     },
+     "Viseu": {
+      "fire_cell_days": 720,
+      "pr_auc": 0.1695546753737746,
+      "prevalence": 0.03401039206424185
+     },
+     "Bragan\u00e7a": {
+      "fire_cell_days": 322,
+      "pr_auc": 0.048185104841328416,
+      "prevalence": 0.010502283105022832
+     },
+     "Porto": {
+      "fire_cell_days": 850,
+      "pr_auc": 0.4580871347162404,
+      "prevalence": 0.08956796628029505
+     },
+     "Vila Real": {
+      "fire_cell_days": 550,
+      "pr_auc": 0.17997344530935452,
+      "prevalence": 0.02897787144362487
+     },
+     "Braga": {
+      "fire_cell_days": 715,
+      "pr_auc": 0.3475684723371458,
+      "prevalence": 0.061215753424657536
+     },
+     "Viana do Castelo": {
+      "fire_cell_days": 428,
+      "pr_auc": 0.24431252367939815,
+      "prevalence": 0.03448831587429493
+     }
+    },
+    "size_class": {
+     "1-10 ha": {
+      "fires": 1220,
+      "recall_top5%": 0.4426229508196721,
+      "recall_top25_per_day": 0.1557377049180328
+     },
+     "<1 ha": {
+      "fires": 8303,
+      "recall_top5%": 0.45899072624352644,
+      "recall_top25_per_day": 0.21558472841141757
+     },
+     "10-100 ha": {
+      "fires": 333,
+      "recall_top5%": 0.4894894894894895,
+      "recall_top25_per_day": 0.15615615615615616
+     },
+     ">=100 ha": {
+      "fires": 62,
+      "recall_top5%": 0.4032258064516129,
+      "recall_top25_per_day": 0.06451612903225806
+     }
+    },
+    "cause_group": {
+     "burning": {
+      "fires": 2253,
+      "recall_top5%": 0.4332001775410564,
+      "recall_top25_per_day": 0.17842876165113183
+     },
+     "unknown": {
+      "fires": 3578,
+      "recall_top5%": 0.5564561207378423,
+      "recall_top25_per_day": 0.30659586361095587
+     },
+     "intentional": {
+      "fires": 1977,
+      "recall_top5%": 0.4279210925644917,
+      "recall_top25_per_day": 0.125948406676783
+     },
+     "rekindle": {
+      "fires": 595,
+      "recall_top5%": 0.7226890756302521,
+      "recall_top25_per_day": 0.33949579831932775
+     },
+     "negligent": {
+      "fires": 1369,
+      "recall_top5%": 0.20087655222790357,
+      "recall_top25_per_day": 0.061358655953250546
+     },
+     "natural": {
+      "fires": 146,
+      "recall_top5%": 0.14383561643835616,
+      "recall_top25_per_day": 0.0136986301369863
+     }
+    }
+   },
+   "large_fires": {
+    ">=10ha": {
+     "fires": 395,
+     "median_rank": 168.0,
+     "share_top10": 0.05063291139240506,
+     "share_top50": 0.26582278481012656,
+     "of_cells": 1036
+    },
+    ">=100ha": {
+     "fires": 62,
+     "median_rank": 241.0,
+     "share_top10": 0.0,
+     "share_top50": 0.14516129032258066,
+     "of_cells": 1036
+    }
+   },
+   "calibration_daily": {
+    "bins": [
+     {
+      "bin": 0,
+      "n": 29422,
+      "events": 2,
+      "mean_pred": 1.9007436186596336e-05,
+      "obs_rate": 6.797634423220719e-05,
+      "ratio_obs_pred": 3.5763026409707352
+     },
+     {
+      "bin": 1,
+      "n": 38370,
+      "events": 10,
+      "mean_pred": 0.0003534643663957728,
+      "obs_rate": 0.00026062027625749283,
+      "ratio_obs_pred": 0.7373311174617168
+     },
+     {
+      "bin": 2,
+      "n": 36776,
+      "events": 40,
+      "mean_pred": 0.0010676412283685483,
+      "obs_rate": 0.0010876658690450293,
+      "ratio_obs_pred": 1.018755964217568
+     },
+     {
+      "bin": 3,
+      "n": 38656,
+      "events": 86,
+      "mean_pred": 0.002966020603179794,
+      "obs_rate": 0.002224751655629139,
+      "ratio_obs_pred": 0.7500796364138672
+     },
+     {
+      "bin": 4,
+      "n": 38608,
+      "events": 193,
+      "mean_pred": 0.005937710935535165,
+      "obs_rate": 0.004998963945296312,
+      "ratio_obs_pred": 0.841900860376888
+     },
+     {
+      "bin": 5,
+      "n": 23030,
+      "events": 177,
+      "mean_pred": 0.009683812565180852,
+      "obs_rate": 0.007685627442466348,
+      "ratio_obs_pred": 0.7936571872632908
+     },
+     {
+      "bin": 6,
+      "n": 50328,
+      "events": 600,
+      "mean_pred": 0.014110457659298114,
+      "obs_rate": 0.011921793037672867,
+      "ratio_obs_pred": 0.8448905999740538
+     },
+     {
+      "bin": 7,
+      "n": 44313,
+      "events": 947,
+      "mean_pred": 0.023780885489810537,
+      "obs_rate": 0.02137070385665606,
+      "ratio_obs_pred": 0.8986504672339819
+     },
+     {
+      "bin": 8,
+      "n": 38640,
+      "events": 1474,
+      "mean_pred": 0.04238561033305771,
+      "obs_rate": 0.03814699792960662,
+      "ratio_obs_pred": 0.8999987880286514
+     },
+     {
+      "bin": 9,
+      "n": 39997,
+      "events": 4994,
+      "mean_pred": 0.136698480078442,
+      "obs_rate": 0.12485936445233392,
+      "ratio_obs_pred": 0.9133924852762488
+     }
+    ],
+    "max_ratio_bins_with_20_events": 1.3331917725176525,
+    "mean_pred": 0.025095371187143035,
+    "obs_rate": 0.022539271169408157
+   },
+   "daily_probability": {
+    "pr_auc": 0.18968464547814914,
+    "roc_auc": 0.8705090143713492,
+    "topk10_precision": 0.19534246575342465
+   },
+   "bootstrap_ci": {
+    "daily_pr_auc": [
+     0.17832761656572751,
+     0.22353619095339866
+    ],
+    "topk10_precision": [
+     0.1719109589041096,
+     0.2147945205479452
+    ],
+    "topk10_recall": [
+     0.07806348877198165,
+     0.08700572566498149
+    ],
+    "topk25_precision": [
+     0.14135890410958904,
+     0.17552602739726025
+    ],
+    "topk25_recall": [
+     0.16051313303857417,
+     0.176196233061871
+    ],
+    "topk50_precision": [
+     0.11354657534246576,
+     0.1407958904109589
+    ],
+    "topk50_recall": [
+     0.2597387195239115,
+     0.28286453360149194
+    ],
+    "adaptive1%_precision": [
+     0.31883686479827533,
+     0.36743762095789373
+    ],
+    "adaptive5%_precision": [
+     0.1763103995050183,
+     0.19492457649637543
+    ],
+    "daily_probability_pr_auc": [
+     0.17005472057939972,
+     0.21207545602486483
+    ]
+   },
+   "seconds": 7.2,
+   "model_meta": {
+    "region": "portugal",
+    "protocol": "current",
+    "local_tz": null,
+    "train_start": "2014-02-01 00:00:00",
+    "validation_from": "2018-01-01 00:00:00",
+    "test_from": "2019-01-01 00:00:00",
+    "sample": {
+     "n_pos": 49555,
+     "n_neg": 991100,
+     "n_units": 1859620,
+     "unit_range": [
+      31,
+      1826
+     ],
+     "neg_sampling": "case_base"
+    },
+    "best_iteration": 145,
+    "validation_sample_pr_auc": 0.2885706949542667,
+    "store": "outputs/store/portugal",
+    "store_built": "2026-09-28T00:19:59+00:00",
+    "n_cells": 1036,
+    "trained": "2026-09-29T12:49:33+00:00",
+    "seconds": 707.7
+   },
+   "importance_total_gain": {
+    "hk_t7_s10": 0.19078,
+    "cell_month_prior": 0.17753,
+    "ffmc": 0.10834,
+    "cell_prior": 0.0938,
+    "hk_t30_s10": 0.07114,
+    "isi": 0.04796,
+    "cell_fires_365d": 0.04321,
+    "days_since_cell_fire": 0.0386,
+    "fwi": 0.0363,
+    "doy_sin": 0.01948,
+    "rain_168h": 0.01503,
+    "hk_t7_s30": 0.01428,
+    "humidity": 0.01251,
+    "rhmin_24h": 0.01225,
+    "dc": 0.0115,
+    "doy_cos": 0.00906,
+    "lat": 0.00734,
+    "rain_90d": 0.00647,
+    "rain_72h": 0.00617,
+    "rain_720h": 0.00562,
+    "nbr_month_prior": 0.00544,
+    "dmc": 0.00449,
+    "temp": 0.00441,
+    "vpdmax_24h": 0.00419,
+    "rain_24h": 0.00418,
+    "wsmax_24h": 0.00412,
+    "vpd": 0.00353,
+    "tmax_24h": 0.00343,
+    "bui": 0.00338,
+    "lon": 0.00292,
+    "nbr1_fires_365d": 0.0029,
+    "nbr2_fires_365d": 0.00279,
+    "nbr_prior": 0.00278,
+    "wind_speed": 0.0024,
+    "hk_t30_s30": 0.0024,
+    "days_since_rain": 0.00206,
+    "eastness": 0.00177,
+    "northness": 0.00176,
+    "slope_mean": 0.00171,
+    "south_share": 0.00154,
+    "nbr1_fires_30d": 0.00145,
+    "days_since_nbr_fire": 0.00128,
+    "dow": 0.00127,
+    "roughness_mean": 0.00121,
+    "slope_p90": 0.00118,
+    "nbr2_fires_30d": 0.00113,
+    "slope_std": 0.00112,
+    "roughness_std": 0.00097,
+    "precip": 0.00078,
+    "holiday": 7e-05
+   },
+   "recipe": {
+    "groups": [
+     "time",
+     "space",
+     "prior",
+     "recency",
+     "fwi",
+     "dry",
+     "core",
+     "extremes",
+     "terrain",
+     "nbr",
+     "hawkes"
+    ],
+    "unit": "day",
+    "target": "y_any",
+    "neg_sampling": "case_base",
+    "neg_ratio": 20,
+    "monotone": false,
+    "features": [
+     "doy_sin",
+     "doy_cos",
+     "dow",
+     "holiday",
+     "lat",
+     "lon",
+     "cell_prior",
+     "cell_month_prior",
+     "days_since_cell_fire",
+     "cell_fires_365d",
+     "ffmc",
+     "dmc",
+     "dc",
+     "isi",
+     "bui",
+     "fwi",
+     "rain_24h",
+     "rain_72h",
+     "rain_168h",
+     "rain_720h",
+     "days_since_rain",
+     "rain_90d",
+     "temp",
+     "humidity",
+     "wind_speed",
+     "precip",
+     "vpd",
+     "tmax_24h",
+     "rhmin_24h",
+     "wsmax_24h",
+     "vpdmax_24h",
+     "slope_mean",
+     "slope_std",
+     "slope_p90",
+     "roughness_mean",
+     "roughness_std",
+     "eastness",
+     "northness",
+     "south_share",
+     "nbr_prior",
+     "nbr_month_prior",
+     "nbr1_fires_30d",
+     "nbr1_fires_365d",
+     "nbr2_fires_30d",
+     "nbr2_fires_365d",
+     "days_since_nbr_fire",
+     "hk_t7_s10",
+     "hk_t7_s30",
+     "hk_t30_s10",
+     "hk_t30_s30"
+    ]
+   },
+   "vs": {
+    "fwi_history": {
+     "daily_pr_auc": {
+      "diff": 0.04660950520741841,
+      "ci": [
+       0.0357425460089569,
+       0.058327505789819364
+      ],
+      "a_better_share": 1.0
+     },
+     "topk10_precision": {
+      "diff": 0.0429689497716895,
+      "ci": [
+       0.03091780821917807,
+       0.055616438356164366
+      ],
+      "a_better_share": 1.0
+     }
+    },
+    "R0": {
+     "daily_pr_auc": {
+      "diff": 0.08918047790929534,
+      "ci": [
+       0.07398426191827463,
+       0.1042891163943942
+      ],
+      "a_better_share": 1.0
+     },
+     "topk10_precision": {
+      "diff": 0.032183561643835616,
+      "ci": [
+       0.021095890410958912,
+       0.042609589041095894
+      ],
+      "a_better_share": 1.0
+     }
+    },
+    "fwi": {
+     "daily_pr_auc": {
+      "diff": 0.1617432412577402,
+      "ci": [
+       0.14351965729752594,
+       0.18211534157832324
+      ],
+      "a_better_share": 1.0
+     },
+     "topk10_precision": {
+      "diff": 0.17677077625570778,
+      "ci": [
+       0.15504109589041096,
+       0.19972602739726028
+      ],
+      "a_better_share": 1.0
+     }
+    }
+   }
+  },
+  "2020": {
+   "model": "firerisk_daily",
+   "grid": {
+    "start": "2020-01-01 00:00:00",
+    "end": "2021-01-01 00:00:00",
+    "cells": 1036,
+    "cell_set": "all",
+    "hours": 8784,
+    "days": 366,
+    "target": "y_any",
+    "include_rekindles": true,
+    "fire_cell_hours": 6770,
+    "fire_cell_days": 7030,
+    "hourly_prevalence": 0.0007439377316426496,
+    "daily_prevalence": 0.018540202966432474
+   },
+   "daily": {
+    "pr_auc": 0.2513871903902254,
+    "roc_auc": 0.9023662389068778,
+    "topk": {
+     "10": {
+      "precision": 0.18961748633879782,
+      "recall": 0.09871977240398293
+     },
+     "25": {
+      "precision": 0.14918032786885246,
+      "recall": 0.1941678520625889
+     },
+     "50": {
+      "precision": 0.116775956284153,
+      "recall": 0.30398293029871976
+     }
+    },
+    "adaptive": {
+     "1%": {
+      "precision": 0.3900316455696203,
+      "recall": 0.21038406827880513,
+      "threshold": 0.36151066422462463,
+      "cells_per_day": 10.360655737704919
+     },
+     "5%": {
+      "precision": 0.18212025316455696,
+      "recall": 0.49118065433854907,
+      "threshold": 0.15373601019382477,
+      "cells_per_day": 51.80327868852459
+     }
+    }
+   },
+   "slices": {
+    "month": {
+     "1": {
+      "fire_cell_days": 65,
+      "pr_auc": 0.008903983634094349,
+      "prevalence": 0.0020239133142358947,
+      "recall_top5%": 0.0
+     },
+     "2": {
+      "fire_cell_days": 128,
+      "pr_auc": 0.056701136123244886,
+      "prevalence": 0.004260418053521502,
+      "recall_top5%": 0.21804511278195488
+     },
+     "3": {
+      "fire_cell_days": 274,
+      "pr_auc": 0.07467072797116797,
+      "prevalence": 0.00853157304770208,
+      "recall_top5%": 0.36177474402730375
+     },
+     "4": {
+      "fire_cell_days": 69,
+      "pr_auc": 0.12316614193448171,
+      "prevalence": 0.00222007722007722,
+      "recall_top5%": 0.38028169014084506
+     },
+     "5": {
+      "fire_cell_days": 391,
+      "pr_auc": 0.12775299273313392,
+      "prevalence": 0.012174617013326691,
+      "recall_top5%": 0.22673031026252982
+     },
+     "6": {
+      "fire_cell_days": 712,
+      "pr_auc": 0.11367065072603412,
+      "prevalence": 0.02290862290862291,
+      "recall_top5%": 0.2877059569074778
+     },
+     "7": {
+      "fire_cell_days": 2001,
+      "pr_auc": 0.3399589451164421,
+      "prevalence": 0.06230539295055424,
+      "recall_top5%": 0.7012372634643377
+     },
+     "8": {
+      "fire_cell_days": 1352,
+      "pr_auc": 0.26948085983691183,
+      "prevalence": 0.04209739693610661,
+      "recall_top5%": 0.6656908665105387
+     },
+     "9": {
+      "fire_cell_days": 1268,
+      "pr_auc": 0.34298498930576965,
+      "prevalence": 0.040797940797940795,
+      "recall_top5%": 0.661378889566809
+     },
+     "10": {
+      "fire_cell_days": 657,
+      "pr_auc": 0.16299773120099453,
+      "prevalence": 0.0204570930377382,
+      "recall_top5%": 0.3223593964334705
+     },
+     "11": {
+      "fire_cell_days": 97,
+      "pr_auc": 0.03839251406846173,
+      "prevalence": 0.003120978120978121,
+      "recall_top5%": 0.03
+     },
+     "12": {
+      "fire_cell_days": 16,
+      "pr_auc": 0.02435928455017752,
+      "prevalence": 0.0004981940465811433,
+      "recall_top5%": 0.0
+     }
+    },
+    "district": {
+     "Faro": {
+      "fire_cell_days": 193,
+      "pr_auc": 0.044154806569927506,
+      "prevalence": 0.00850520007050943
+     },
+     "Beja": {
+      "fire_cell_days": 232,
+      "pr_auc": 0.05743634891298843,
+      "prevalence": 0.005710628661448333
+     },
+     "Set\u00fabal": {
+      "fire_cell_days": 306,
+      "pr_auc": 0.13398067156523244,
+      "prevalence": 0.012667660208643815
+     },
+     "\u00c9vora": {
+      "fire_cell_days": 160,
+      "pr_auc": 0.051818406800701,
+      "prevalence": 0.00546448087431694
+     },
+     "Lisboa": {
+      "fire_cell_days": 460,
+      "pr_auc": 0.20845286442817715,
+      "prevalence": 0.03927595628415301
+     },
+     "Santar\u00e9m": {
+      "fire_cell_days": 502,
+      "pr_auc": 0.09692740117488692,
+      "prevalence": 0.02047141342467988
+     },
+     "Portalegre": {
+      "fire_cell_days": 173,
+      "pr_auc": 0.03803339996645346,
+      "prevalence": 0.006657430924343877
+     },
+     "Leiria": {
+      "fire_cell_days": 333,
+      "pr_auc": 0.10426135063710967,
+      "prevalence": 0.01935821416114405
+     },
+     "Castelo Branco": {
+      "fire_cell_days": 268,
+      "pr_auc": 0.073212109753695,
+      "prevalence": 0.010030690919979041
+     },
+     "Coimbra": {
+      "fire_cell_days": 211,
+      "pr_auc": 0.09384130813559312,
+      "prevalence": 0.012532668092183416
+     },
+     "Guarda": {
+      "fire_cell_days": 270,
+      "pr_auc": 0.04588393179949644,
+      "prevalence": 0.0117096018735363
+     },
+     "Aveiro": {
+      "fire_cell_days": 541,
+      "pr_auc": 0.23774041741640914,
+      "prevalence": 0.04619193989071038
+     },
+     "Viseu": {
+      "fire_cell_days": 595,
+      "pr_auc": 0.17240798194305773,
+      "prevalence": 0.028029018277746374
+     },
+     "Bragan\u00e7a": {
+      "fire_cell_days": 229,
+      "pr_auc": 0.043948676026549664,
+      "prevalence": 0.007448607858443924
+     },
+     "Porto": {
+      "fire_cell_days": 881,
+      "pr_auc": 0.5980106850242415,
+      "prevalence": 0.09258091635140815
+     },
+     "Vila Real": {
+      "fire_cell_days": 497,
+      "pr_auc": 0.11878039334207498,
+      "prevalence": 0.026113913408995375
+     },
+     "Braga": {
+      "fire_cell_days": 726,
+      "pr_auc": 0.43512579107553734,
+      "prevalence": 0.061987704918032786
+     },
+     "Viana do Castelo": {
+      "fire_cell_days": 453,
+      "pr_auc": 0.33692035927165787,
+      "prevalence": 0.03640308582449373
+     }
+    },
+    "size_class": {
+     "<1 ha": {
+      "fires": 7390,
+      "recall_top5%": 0.5612990527740189,
+      "recall_top25_per_day": 0.27550744248985115
+     },
+     "1-10 ha": {
+      "fires": 1005,
+      "recall_top5%": 0.5283582089552239,
+      "recall_top25_per_day": 0.22587064676616916
+     },
+     "10-100 ha": {
+      "fires": 250,
+      "recall_top5%": 0.636,
+      "recall_top25_per_day": 0.24
+     },
+     ">=100 ha": {
+      "fires": 67,
+      "recall_top5%": 0.47761194029850745,
+      "recall_top25_per_day": 0.07462686567164178
+     }
+    },
+    "cause_group": {
+     "burning": {
+      "fires": 1810,
+      "recall_top5%": 0.3552486187845304,
+      "recall_top25_per_day": 0.12651933701657458
+     },
+     "unknown": {
+      "fires": 3293,
+      "recall_top5%": 0.6866079562708777,
+      "recall_top25_per_day": 0.4339508047373216
+     },
+     "intentional": {
+      "fires": 2039,
+      "recall_top5%": 0.6223639038744483,
+      "recall_top25_per_day": 0.20009808729769496
+     },
+     "negligent": {
+      "fires": 928,
+      "recall_top5%": 0.26939655172413796,
+      "recall_top25_per_day": 0.03879310344827586
+     },
+     "rekindle": {
+      "fires": 525,
+      "recall_top5%": 0.8076190476190476,
+      "recall_top25_per_day": 0.43047619047619046
+     },
+     "natural": {
+      "fires": 117,
+      "recall_top5%": 0.19658119658119658,
+      "recall_top25_per_day": 0.0
+     }
+    }
+   },
+   "large_fires": {
+    ">=10ha": {
+     "fires": 317,
+     "median_rank": 120.0,
+     "share_top10": 0.07886435331230283,
+     "share_top50": 0.35331230283911674,
+     "of_cells": 1036
+    },
+    ">=100ha": {
+     "fires": 67,
+     "median_rank": 222.0,
+     "share_top10": 0.014925373134328358,
+     "share_top50": 0.22388059701492538,
+     "of_cells": 1036
+    }
+   },
+   "calibration_daily": {
+    "bins": [
+     {
+      "bin": 0,
+      "n": 23325,
+      "events": 0,
+      "mean_pred": 0.0,
+      "obs_rate": 0.0,
+      "ratio_obs_pred": NaN
+     },
+     {
+      "bin": 1,
+      "n": 27049,
+      "events": 1,
+      "mean_pred": 0.00012119258485802852,
+      "obs_rate": 3.6969943435986544e-05,
+      "ratio_obs_pred": 0.30505119995002267
+     },
+     {
+      "bin": 2,
+      "n": 61835,
+      "events": 24,
+      "mean_pred": 0.00038145425641948887,
+      "obs_rate": 0.000388129700008086,
+      "ratio_obs_pred": 1.0174999845361696
+     },
+     {
+      "bin": 3,
+      "n": 32392,
+      "events": 19,
+      "mean_pred": 0.0011723908205186493,
+      "obs_rate": 0.0005865645838478636,
+      "ratio_obs_pred": 0.5003148895249586
+     },
+     {
+      "bin": 4,
+      "n": 44868,
+      "events": 106,
+      "mean_pred": 0.0024327494698333924,
+      "obs_rate": 0.002362485513060533,
+      "ratio_obs_pred": 0.9711174711394875
+     },
+     {
+      "bin": 5,
+      "n": 30292,
+      "events": 132,
+      "mean_pred": 0.004470126493826481,
+      "obs_rate": 0.004357586161362736,
+      "ratio_obs_pred": 0.9748239042856683
+     },
+     {
+      "bin": 6,
+      "n": 31724,
+      "events": 230,
+      "mean_pred": 0.007682701125596815,
+      "obs_rate": 0.007250031521876182,
+      "ratio_obs_pred": 0.9436826193486705
+     },
+     {
+      "bin": 7,
+      "n": 47961,
+      "events": 661,
+      "mean_pred": 0.013558913610434285,
+      "obs_rate": 0.013782031233710723,
+      "ratio_obs_pred": 1.016455420374147
+     },
+     {
+      "bin": 8,
+      "n": 41501,
+      "events": 1201,
+      "mean_pred": 0.02762158496402335,
+      "obs_rate": 0.028939061709356402,
+      "ratio_obs_pred": 1.0476973623001375
+     },
+     {
+      "bin": 9,
+      "n": 38229,
+      "events": 4656,
+      "mean_pred": 0.1169319925253796,
+      "obs_rate": 0.12179235658793063,
+      "ratio_obs_pred": 1.041565733701973
+     }
+    ],
+    "max_ratio_bins_with_20_events": 1.0596783065584061,
+    "mean_pred": 0.01798622467302356,
+    "obs_rate": 0.018540202966432474
+   },
+   "daily_probability": {
+    "pr_auc": 0.2422797900554774,
+    "roc_auc": 0.9022505569729324,
+    "topk10_precision": 0.18934426229508197
+   },
+   "bootstrap_ci": {
+    "daily_pr_auc": [
+     0.2286767206315924,
+     0.2736000083573427
+    ],
+    "topk10_precision": [
+     0.16364754098360657,
+     0.21735655737704918
+    ],
+    "topk10_recall": [
+     0.09289316087057452,
+     0.10408856269531351
+    ],
+    "topk25_precision": [
+     0.12972131147540986,
+     0.17103551912568302
+    ],
+    "topk25_recall": [
+     0.1861637885912949,
+     0.20187544793993056
+    ],
+    "topk50_precision": [
+     0.10270081967213114,
+     0.1339330601092896
+    ],
+    "topk50_recall": [
+     0.29369159823733165,
+     0.31518635387596805
+    ],
+    "adaptive1%_precision": [
+     0.37170592873247393,
+     0.4091703030704165
+    ],
+    "adaptive5%_precision": [
+     0.17137471680321556,
+     0.1917860571530532
+    ],
+    "daily_probability_pr_auc": [
+     0.21983284086795501,
+     0.26353749203408666
+    ]
+   },
+   "seconds": 5.1,
+   "model_meta": {
+    "region": "portugal",
+    "protocol": "current",
+    "local_tz": null,
+    "train_start": "2014-02-01 00:00:00",
+    "validation_from": "2019-01-01 00:00:00",
+    "test_from": "2020-01-01 00:00:00",
+    "sample": {
+     "n_pos": 57737,
+     "n_neg": 1154740,
+     "n_units": 2237760,
+     "unit_range": [
+      31,
+      2191
+     ],
+     "neg_sampling": "case_base"
+    },
+    "best_iteration": 205,
+    "validation_sample_pr_auc": 0.2731659990475573,
+    "store": "outputs/store/portugal",
+    "store_built": "2026-09-28T00:19:59+00:00",
+    "n_cells": 1036,
+    "trained": "2026-09-29T13:01:51+00:00",
+    "seconds": 715.8
+   },
+   "importance_total_gain": {
+    "cell_month_prior": 0.29901,
+    "ffmc": 0.10143,
+    "hk_t7_s10": 0.10135,
+    "cell_prior": 0.08035,
+    "hk_t30_s10": 0.05141,
+    "isi": 0.05117,
+    "cell_fires_365d": 0.04429,
+    "fwi": 0.03199,
+    "days_since_cell_fire": 0.02893,
+    "hk_t7_s30": 0.01681,
+    "doy_sin": 0.01675,
+    "rain_168h": 0.01633,
+    "rhmin_24h": 0.01392,
+    "dc": 0.01147,
+    "humidity": 0.0105,
+    "doy_cos": 0.00862,
+    "lat": 0.00726,
+    "rain_90d": 0.00708,
+    "rain_720h": 0.00706,
+    "rain_72h": 0.00661,
+    "nbr_month_prior": 0.00633,
+    "vpdmax_24h": 0.00523,
+    "rain_24h": 0.00494,
+    "wsmax_24h": 0.00491,
+    "dmc": 0.00484,
+    "temp": 0.00479,
+    "bui": 0.00429,
+    "nbr1_fires_365d": 0.00367,
+    "wind_speed": 0.0036,
+    "tmax_24h": 0.0036,
+    "nbr2_fires_365d": 0.00355,
+    "hk_t30_s30": 0.00337,
+    "lon": 0.00327,
+    "nbr_prior": 0.00317,
+    "vpd": 0.00313,
+    "days_since_rain": 0.00306,
+    "nbr1_fires_30d": 0.00231,
+    "eastness": 0.00229,
+    "northness": 0.00211,
+    "south_share": 0.00205,
+    "slope_mean": 0.00192,
+    "dow": 0.00169,
+    "slope_p90": 0.00165,
+    "days_since_nbr_fire": 0.00149,
+    "roughness_mean": 0.00146,
+    "nbr2_fires_30d": 0.00143,
+    "slope_std": 0.00138,
+    "roughness_std": 0.00114,
+    "precip": 0.00092,
+    "holiday": 4e-05
+   },
+   "recipe": {
+    "groups": [
+     "time",
+     "space",
+     "prior",
+     "recency",
+     "fwi",
+     "dry",
+     "core",
+     "extremes",
+     "terrain",
+     "nbr",
+     "hawkes"
+    ],
+    "unit": "day",
+    "target": "y_any",
+    "neg_sampling": "case_base",
+    "neg_ratio": 20,
+    "monotone": false,
+    "features": [
+     "doy_sin",
+     "doy_cos",
+     "dow",
+     "holiday",
+     "lat",
+     "lon",
+     "cell_prior",
+     "cell_month_prior",
+     "days_since_cell_fire",
+     "cell_fires_365d",
+     "ffmc",
+     "dmc",
+     "dc",
+     "isi",
+     "bui",
+     "fwi",
+     "rain_24h",
+     "rain_72h",
+     "rain_168h",
+     "rain_720h",
+     "days_since_rain",
+     "rain_90d",
+     "temp",
+     "humidity",
+     "wind_speed",
+     "precip",
+     "vpd",
+     "tmax_24h",
+     "rhmin_24h",
+     "wsmax_24h",
+     "vpdmax_24h",
+     "slope_mean",
+     "slope_std",
+     "slope_p90",
+     "roughness_mean",
+     "roughness_std",
+     "eastness",
+     "northness",
+     "south_share",
+     "nbr_prior",
+     "nbr_month_prior",
+     "nbr1_fires_30d",
+     "nbr1_fires_365d",
+     "nbr2_fires_30d",
+     "nbr2_fires_365d",
+     "days_since_nbr_fire",
+     "hk_t7_s10",
+     "hk_t7_s30",
+     "hk_t30_s10",
+     "hk_t30_s30"
+    ]
+   },
+   "vs": {
+    "fwi_history": {
+     "daily_pr_auc": {
+      "diff": 0.03343848974466493,
+      "ci": [
+       0.02826156200409598,
+       0.03864057503087226
+      ],
+      "a_better_share": 1.0
+     },
+     "topk10_precision": {
+      "diff": 0.0292103825136612,
+      "ci": [
+       0.019672131147540975,
+       0.03894125683060109
+      ],
+      "a_better_share": 1.0
+     }
+    },
+    "R0": {
+     "daily_pr_auc": {
+      "diff": 0.11399481321734209,
+      "ci": [
+       0.10087517071555432,
+       0.12838313143090085
+      ],
+      "a_better_share": 1.0
+     },
+     "topk10_precision": {
+      "diff": 0.042734061930783246,
+      "ci": [
+       0.03209699453551912,
+       0.05451502732240437
+      ],
+      "a_better_share": 1.0
+     }
+    },
+    "fwi": {
+     "daily_pr_auc": {
+      "diff": 0.213510901622642,
+      "ci": [
+       0.19248926539028843,
+       0.23191743477472623
+      ],
+      "a_better_share": 1.0
+     },
+     "topk10_precision": {
+      "diff": 0.17900910746812385,
+      "ci": [
+       0.15326502732240438,
+       0.20671448087431693
+      ],
+      "a_better_share": 1.0
+     }
+    }
+   }
+  },
+  "2021": {
+   "model": "firerisk_daily",
+   "grid": {
+    "start": "2021-01-01 00:00:00",
+    "end": "2022-01-01 00:00:00",
+    "cells": 1036,
+    "cell_set": "all",
+    "hours": 8760,
+    "days": 365,
+    "target": "y_any",
+    "include_rekindles": true,
+    "fire_cell_hours": 6935,
+    "fire_cell_days": 6952,
+    "hourly_prevalence": 0.0007641570141570141,
+    "daily_prevalence": 0.018384725234040302
+   },
+   "daily": {
+    "pr_auc": 0.18773248395829048,
+    "roc_auc": 0.8797312473725237,
+    "topk": {
+     "10": {
+      "precision": 0.18986301369863012,
+      "recall": 0.09968354430379747
+     },
+     "25": {
+      "precision": 0.1521095890410959,
+      "recall": 0.1996547756041427
+     },
+     "50": {
+      "precision": 0.12356164383561644,
+      "recall": 0.32436708860759494
+     }
+    },
+    "adaptive": {
+     "1%": {
+      "precision": 0.316234796404019,
+      "recall": 0.1720368239355581,
+      "threshold": 0.3644320070743561,
+      "cells_per_day": 10.361643835616439
+     },
+     "5%": {
+      "precision": 0.16591738509546727,
+      "recall": 0.45123705408515535,
+      "threshold": 0.15203087031841278,
+      "cells_per_day": 51.8
+     }
+    }
+   },
+   "slices": {
+    "month": {
+     "1": {
+      "fire_cell_days": 183,
+      "pr_auc": 0.19448617099675378,
+      "prevalence": 0.0056980944077718275,
+      "recall_top5%": 0.4834123222748815
+     },
+     "2": {
+      "fire_cell_days": 39,
+      "pr_auc": 0.06288628250104152,
+      "prevalence": 0.0013444567015995588,
+      "recall_top5%": 0.0
+     },
+     "3": {
+      "fire_cell_days": 1013,
+      "pr_auc": 0.29631727198174074,
+      "prevalence": 0.031541910574168636,
+      "recall_top5%": 0.7107569721115538
+     },
+     "4": {
+      "fire_cell_days": 395,
+      "pr_auc": 0.16255249070011352,
+      "prevalence": 0.01270913770913771,
+      "recall_top5%": 0.5548098434004475
+     },
+     "5": {
+      "fire_cell_days": 541,
+      "pr_auc": 0.10324499078419294,
+      "prevalence": 0.01684518620002491,
+      "recall_top5%": 0.2793103448275862
+     },
+     "6": {
+      "fire_cell_days": 840,
+      "pr_auc": 0.1395785651362241,
+      "prevalence": 0.02702702702702703,
+      "recall_top5%": 0.3581445523193096
+     },
+     "7": {
+      "fire_cell_days": 1131,
+      "pr_auc": 0.21212329985286033,
+      "prevalence": 0.03521609166770457,
+      "recall_top5%": 0.5798319327731093
+     },
+     "8": {
+      "fire_cell_days": 1322,
+      "pr_auc": 0.23953480899701482,
+      "prevalence": 0.04116328309876697,
+      "recall_top5%": 0.6172839506172839
+     },
+     "9": {
+      "fire_cell_days": 565,
+      "pr_auc": 0.12568454878651117,
+      "prevalence": 0.01817889317889318,
+      "recall_top5%": 0.32222222222222224
+     },
+     "10": {
+      "fire_cell_days": 534,
+      "pr_auc": 0.15855957508869636,
+      "prevalence": 0.016627226304645658,
+      "recall_top5%": 0.3516295025728988
+     },
+     "11": {
+      "fire_cell_days": 300,
+      "pr_auc": 0.09356987115766985,
+      "prevalence": 0.009652509652509652,
+      "recall_top5%": 0.1388888888888889
+     },
+     "12": {
+      "fire_cell_days": 89,
+      "pr_auc": 0.07462147095296899,
+      "prevalence": 0.00277120438410761,
+      "recall_top5%": 0.1134020618556701
+     }
+    },
+    "district": {
+     "Faro": {
+      "fire_cell_days": 291,
+      "pr_auc": 0.06991530603693853,
+      "prevalence": 0.012859036676977463
+     },
+     "Beja": {
+      "fire_cell_days": 291,
+      "pr_auc": 0.08143806372770696,
+      "prevalence": 0.007182524990744169
+     },
+     "Set\u00fabal": {
+      "fire_cell_days": 480,
+      "pr_auc": 0.18131181061542517,
+      "prevalence": 0.019925280199252802
+     },
+     "\u00c9vora": {
+      "fire_cell_days": 202,
+      "pr_auc": 0.05023033599255239,
+      "prevalence": 0.006917808219178082
+     },
+     "Lisboa": {
+      "fire_cell_days": 498,
+      "pr_auc": 0.1988722952931685,
+      "prevalence": 0.04263698630136986
+     },
+     "Santar\u00e9m": {
+      "fire_cell_days": 431,
+      "pr_auc": 0.07119024752227414,
+      "prevalence": 0.017624207728480883
+     },
+     "Portalegre": {
+      "fire_cell_days": 181,
+      "pr_auc": 0.040270358478565055,
+      "prevalence": 0.006984371985336677
+     },
+     "Leiria": {
+      "fire_cell_days": 210,
+      "pr_auc": 0.04335138888870881,
+      "prevalence": 0.012241329058583503
+     },
+     "Castelo Branco": {
+      "fire_cell_days": 215,
+      "pr_auc": 0.06644539048011716,
+      "prevalence": 0.008069056108087821
+     },
+     "Coimbra": {
+      "fire_cell_days": 156,
+      "pr_auc": 0.051111765390903334,
+      "prevalence": 0.009291244788564622
+     },
+     "Guarda": {
+      "fire_cell_days": 206,
+      "pr_auc": 0.025746298638023055,
+      "prevalence": 0.008958469232441835
+     },
+     "Aveiro": {
+      "fire_cell_days": 533,
+      "pr_auc": 0.2633286660894223,
+      "prevalence": 0.04563356164383562
+     },
+     "Viseu": {
+      "fire_cell_days": 562,
+      "pr_auc": 0.15745267481107367,
+      "prevalence": 0.026547000472366557
+     },
+     "Bragan\u00e7a": {
+      "fire_cell_days": 205,
+      "pr_auc": 0.05627649342524604,
+      "prevalence": 0.0066862361382909324
+     },
+     "Porto": {
+      "fire_cell_days": 880,
+      "pr_auc": 0.37638738366053714,
+      "prevalence": 0.09272918861959958
+     },
+     "Vila Real": {
+      "fire_cell_days": 508,
+      "pr_auc": 0.2327609432080231,
+      "prevalence": 0.026765015806111698
+     },
+     "Braga": {
+      "fire_cell_days": 638,
+      "pr_auc": 0.24097395497344462,
+      "prevalence": 0.054623287671232874
+     },
+     "Viana do Castelo": {
+      "fire_cell_days": 465,
+      "pr_auc": 0.20967339165583404,
+      "prevalence": 0.03746978243352135
+     }
+    },
+    "size_class": {
+     "<1 ha": {
+      "fires": 6537,
+      "recall_top5%": 0.49166284228239254,
+      "recall_top25_per_day": 0.2360409973994187
+     },
+     "1-10 ha": {
+      "fires": 1067,
+      "recall_top5%": 0.46672914714151825,
+      "recall_top25_per_day": 0.19775070290534208
+     },
+     ">=100 ha": {
+      "fires": 31,
+      "recall_top5%": 0.3548387096774194,
+      "recall_top25_per_day": 0.16129032258064516
+     },
+     "10-100 ha": {
+      "fires": 306,
+      "recall_top5%": 0.6078431372549019,
+      "recall_top25_per_day": 0.238562091503268
+     }
+    },
+    "cause_group": {
+     "burning": {
+      "fires": 2480,
+      "recall_top5%": 0.46491935483870966,
+      "recall_top25_per_day": 0.1939516129032258
+     },
+     "intentional": {
+      "fires": 1306,
+      "recall_top5%": 0.5145482388973966,
+      "recall_top25_per_day": 0.17075038284839203
+     },
+     "unknown": {
+      "fires": 2808,
+      "recall_top5%": 0.6160968660968661,
+      "recall_top25_per_day": 0.3685897435897436
+     },
+     "negligent": {
+      "fires": 1026,
+      "recall_top5%": 0.2037037037037037,
+      "recall_top25_per_day": 0.04483430799220273
+     },
+     "rekindle": {
+      "fires": 205,
+      "recall_top5%": 0.6926829268292682,
+      "recall_top25_per_day": 0.22439024390243903
+     },
+     "natural": {
+      "fires": 116,
+      "recall_top5%": 0.02586206896551724,
+      "recall_top25_per_day": 0.008620689655172414
+     }
+    }
+   },
+   "large_fires": {
+    ">=10ha": {
+     "fires": 337,
+     "median_rank": 72.0,
+     "share_top10": 0.09792284866468842,
+     "share_top50": 0.3768545994065282,
+     "of_cells": 1036
+    },
+    ">=100ha": {
+     "fires": 31,
+     "median_rank": 198.0,
+     "share_top10": 0.06451612903225806,
+     "share_top50": 0.25806451612903225,
+     "of_cells": 1036
+    }
+   },
+   "calibration_daily": {
+    "bins": [
+     {
+      "bin": 0,
+      "n": 35841,
+      "events": 1,
+      "mean_pred": 0.0,
+      "obs_rate": 2.7901007226360873e-05,
+      "ratio_obs_pred": NaN
+     },
+     {
+      "bin": 1,
+      "n": 37031,
+      "events": 13,
+      "mean_pred": 0.00016522995427914103,
+      "obs_rate": 0.00035105722232723935,
+      "ratio_obs_pred": 2.1246584728466367
+     },
+     {
+      "bin": 2,
+      "n": 30205,
+      "events": 16,
+      "mean_pred": 0.0006050327631965737,
+      "obs_rate": 0.0005297136235722562,
+      "ratio_obs_pred": 0.8755122958525695
+     },
+     {
+      "bin": 3,
+      "n": 46189,
+      "events": 104,
+      "mean_pred": 0.0014202018740686192,
+      "obs_rate": 0.002251618350689558,
+      "ratio_obs_pred": 1.5854213346720085
+     },
+     {
+      "bin": 4,
+      "n": 35922,
+      "events": 151,
+      "mean_pred": 0.0029970545587483218,
+      "obs_rate": 0.004203552140749402,
+      "ratio_obs_pred": 1.4025611006911256
+     },
+     {
+      "bin": 5,
+      "n": 38842,
+      "events": 232,
+      "mean_pred": 0.005849243554108365,
+      "obs_rate": 0.005972915915761289,
+      "ratio_obs_pred": 1.0211433086191222
+     },
+     {
+      "bin": 6,
+      "n": 39581,
+      "events": 403,
+      "mean_pred": 0.010442746383135701,
+      "obs_rate": 0.010181652813218464,
+      "ratio_obs_pred": 0.974997614579735
+     },
+     {
+      "bin": 7,
+      "n": 36901,
+      "events": 624,
+      "mean_pred": 0.016878583659739935,
+      "obs_rate": 0.016910110837104687,
+      "ratio_obs_pred": 1.0018678805046868
+     },
+     {
+      "bin": 8,
+      "n": 36139,
+      "events": 974,
+      "mean_pred": 0.028331519844563894,
+      "obs_rate": 0.02695149284706273,
+      "ratio_obs_pred": 0.9512900470898684
+     },
+     {
+      "bin": 9,
+      "n": 41489,
+      "events": 4434,
+      "mean_pred": 0.10911742234217865,
+      "obs_rate": 0.10687170093277737,
+      "ratio_obs_pred": 0.9794192223276776
+     }
+    ],
+    "max_ratio_bins_with_20_events": 1.5854213346720085,
+    "mean_pred": 0.018543566808152948,
+    "obs_rate": 0.018384725234040302
+   },
+   "daily_probability": {
+    "pr_auc": 0.18106382824860245,
+    "roc_auc": 0.8795991269945771,
+    "topk10_precision": 0.19315068493150686
+   },
+   "bootstrap_ci": {
+    "daily_pr_auc": [
+     0.17067734481092758,
+     0.2080588699442332
+    ],
+    "topk10_precision": [
+     0.17067123287671235,
+     0.20850684931506847
+    ],
+    "topk10_recall": [
+     0.09357879769490207,
+     0.10609278892261903
+    ],
+    "topk25_precision": [
+     0.13741917808219178,
+     0.16603287671232878
+    ],
+    "topk25_recall": [
+     0.19025372858894113,
+     0.20944430522912932
+    ],
+    "topk50_precision": [
+     0.11254794520547945,
+     0.1345808219178082
+    ],
+    "topk50_recall": [
+     0.3116199219314732,
+     0.33695930829078063
+    ],
+    "adaptive1%_precision": [
+     0.29601363037314865,
+     0.3403851807946343
+    ],
+    "adaptive5%_precision": [
+     0.1568007519109074,
+     0.17451401943296366
+    ],
+    "daily_probability_pr_auc": [
+     0.16495273188384801,
+     0.20052634773759465
+    ]
+   },
+   "seconds": 5.2,
+   "model_meta": {
+    "region": "portugal",
+    "protocol": "current",
+    "local_tz": null,
+    "train_start": "2014-02-01 00:00:00",
+    "validation_from": "2020-01-01 00:00:00",
+    "test_from": "2021-01-01 00:00:00",
+    "sample": {
+     "n_pos": 64515,
+     "n_neg": 1290300,
+     "n_units": 2616936,
+     "unit_range": [
+      31,
+      2557
+     ],
+     "neg_sampling": "case_base"
+    },
+    "best_iteration": 272,
+    "validation_sample_pr_auc": 0.343993351845729,
+    "store": "outputs/store/portugal",
+    "store_built": "2026-09-28T00:19:59+00:00",
+    "n_cells": 1036,
+    "trained": "2026-09-29T13:12:49+00:00",
+    "seconds": 634.0
+   },
+   "importance_total_gain": {
+    "cell_month_prior": 0.30758,
+    "ffmc": 0.09949,
+    "hk_t7_s10": 0.09659,
+    "cell_prior": 0.06902,
+    "hk_t30_s10": 0.06252,
+    "cell_fires_365d": 0.04783,
+    "isi": 0.0478,
+    "fwi": 0.03037,
+    "days_since_cell_fire": 0.02306,
+    "hk_t7_s30": 0.01728,
+    "rain_168h": 0.01668,
+    "doy_sin": 0.01476,
+    "rhmin_24h": 0.01397,
+    "humidity": 0.01161,
+    "dc": 0.01143,
+    "doy_cos": 0.00952,
+    "rain_90d": 0.00746,
+    "rain_720h": 0.00692,
+    "rain_72h": 0.00664,
+    "lat": 0.00625,
+    "nbr_month_prior": 0.00546,
+    "rain_24h": 0.00541,
+    "wsmax_24h": 0.00518,
+    "dmc": 0.00499,
+    "temp": 0.0048,
+    "vpdmax_24h": 0.00476,
+    "nbr2_fires_365d": 0.00429,
+    "nbr1_fires_365d": 0.0042,
+    "bui": 0.00403,
+    "wind_speed": 0.00394,
+    "lon": 0.00383,
+    "nbr_prior": 0.00373,
+    "vpd": 0.0037,
+    "tmax_24h": 0.00367,
+    "hk_t30_s30": 0.00359,
+    "days_since_rain": 0.00334,
+    "eastness": 0.00303,
+    "northness": 0.00253,
+    "south_share": 0.0022,
+    "nbr1_fires_30d": 0.00205,
+    "slope_mean": 0.00204,
+    "nbr2_fires_30d": 0.0019,
+    "slope_p90": 0.00189,
+    "roughness_std": 0.00165,
+    "days_since_nbr_fire": 0.00165,
+    "roughness_mean": 0.00161,
+    "slope_std": 0.00148,
+    "dow": 0.00136,
+    "precip": 0.0008,
+    "holiday": 8e-05
+   },
+   "recipe": {
+    "groups": [
+     "time",
+     "space",
+     "prior",
+     "recency",
+     "fwi",
+     "dry",
+     "core",
+     "extremes",
+     "terrain",
+     "nbr",
+     "hawkes"
+    ],
+    "unit": "day",
+    "target": "y_any",
+    "neg_sampling": "case_base",
+    "neg_ratio": 20,
+    "monotone": false,
+    "features": [
+     "doy_sin",
+     "doy_cos",
+     "dow",
+     "holiday",
+     "lat",
+     "lon",
+     "cell_prior",
+     "cell_month_prior",
+     "days_since_cell_fire",
+     "cell_fires_365d",
+     "ffmc",
+     "dmc",
+     "dc",
+     "isi",
+     "bui",
+     "fwi",
+     "rain_24h",
+     "rain_72h",
+     "rain_168h",
+     "rain_720h",
+     "days_since_rain",
+     "rain_90d",
+     "temp",
+     "humidity",
+     "wind_speed",
+     "precip",
+     "vpd",
+     "tmax_24h",
+     "rhmin_24h",
+     "wsmax_24h",
+     "vpdmax_24h",
+     "slope_mean",
+     "slope_std",
+     "slope_p90",
+     "roughness_mean",
+     "roughness_std",
+     "eastness",
+     "northness",
+     "south_share",
+     "nbr_prior",
+     "nbr_month_prior",
+     "nbr1_fires_30d",
+     "nbr1_fires_365d",
+     "nbr2_fires_30d",
+     "nbr2_fires_365d",
+     "days_since_nbr_fire",
+     "hk_t7_s10",
+     "hk_t7_s30",
+     "hk_t30_s10",
+     "hk_t30_s30"
+    ]
+   },
+   "vs": {
+    "fwi_history": {
+     "daily_pr_auc": {
+      "diff": 0.05512668581653609,
+      "ci": [
+       0.04010308972743634,
+       0.07081553189452112
+      ],
+      "a_better_share": 1.0
+     },
+     "topk10_precision": {
+      "diff": 0.028750684931506853,
+      "ci": [
+       0.01753424657534247,
+       0.04043150684931505
+      ],
+      "a_better_share": 1.0
+     }
+    },
+    "R0": {
+     "daily_pr_auc": {
+      "diff": 0.07947551322474929,
+      "ci": [
+       0.06564759297711081,
+       0.09593329276645184
+      ],
+      "a_better_share": 1.0
+     },
+     "topk10_precision": {
+      "diff": 0.03412602739726027,
+      "ci": [
+       0.02410958904109589,
+       0.044383561643835626
+      ],
+      "a_better_share": 1.0
+     }
+    },
+    "fwi": {
+     "daily_pr_auc": {
+      "diff": 0.15971722654389897,
+      "ci": [
+       0.14258612691424327,
+       0.17837257374650498
+      ],
+      "a_better_share": 1.0
+     },
+     "topk10_precision": {
+      "diff": 0.17729771689497717,
+      "ci": [
+       0.1594246575342466,
+       0.19576027397260273
+      ],
+      "a_better_share": 1.0
+     }
+    }
+   }
+  },
+  "2022": {
+   "model": "firerisk_daily",
+   "grid": {
+    "start": "2022-01-01 00:00:00",
+    "end": "2023-01-01 00:00:00",
+    "cells": 1036,
+    "cell_set": "all",
+    "hours": 8760,
+    "days": 365,
+    "target": "y_any",
+    "include_rekindles": true,
+    "fire_cell_hours": 8155,
+    "fire_cell_days": 8211,
+    "hourly_prevalence": 0.000898586943107491,
+    "daily_prevalence": 0.021714179933358016
+   },
+   "daily": {
+    "pr_auc": 0.26124668328134637,
+    "roc_auc": 0.8940638916356798,
+    "topk": {
+     "10": {
+      "precision": 0.2219178082191781,
+      "recall": 0.09864815491413957
+     },
+     "25": {
+      "precision": 0.1884931506849315,
+      "recall": 0.20947509438558032
+     },
+     "50": {
+      "precision": 0.15364383561643835,
+      "recall": 0.34149311898672513
+     }
+    },
+    "adaptive": {
+     "1%": {
+      "precision": 0.4415653093601269,
+      "recall": 0.20338570210692972,
+      "threshold": 0.43290507793426514,
+      "cells_per_day": 10.361643835616439
+     },
+     "5%": {
+      "precision": 0.20574390437404136,
+      "recall": 0.47375471927901597,
+      "threshold": 0.18364876508712769,
+      "cells_per_day": 51.8
+     }
+    }
+   },
+   "slices": {
+    "month": {
+     "1": {
+      "fire_cell_days": 550,
+      "pr_auc": 0.331583066206784,
+      "prevalence": 0.017125420351226803,
+      "recall_top5%": 0.6253644314868805
+     },
+     "2": {
+      "fire_cell_days": 822,
+      "pr_auc": 0.25936133373703835,
+      "prevalence": 0.028337010479867624,
+      "recall_top5%": 0.6612740141557129
+     },
+     "3": {
+      "fire_cell_days": 258,
+      "pr_auc": 0.07657575279132005,
+      "prevalence": 0.008033379001120937,
+      "recall_top5%": 0.23487544483985764
+     },
+     "4": {
+      "fire_cell_days": 556,
+      "pr_auc": 0.13432463345600013,
+      "prevalence": 0.01788931788931789,
+      "recall_top5%": 0.24104234527687296
+     },
+     "5": {
+      "fire_cell_days": 787,
+      "pr_auc": 0.15758034035786983,
+      "prevalence": 0.02450491966620999,
+      "recall_top5%": 0.40022172949002216
+     },
+     "6": {
+      "fire_cell_days": 781,
+      "pr_auc": 0.1253904651368593,
+      "prevalence": 0.025128700128700127,
+      "recall_top5%": 0.25396825396825395
+     },
+     "7": {
+      "fire_cell_days": 1893,
+      "pr_auc": 0.33950046679586776,
+      "prevalence": 0.05894258313613152,
+      "recall_top5%": 0.659244532803181
+     },
+     "8": {
+      "fire_cell_days": 1652,
+      "pr_auc": 0.3649143199908605,
+      "prevalence": 0.05143853530950305,
+      "recall_top5%": 0.6918063314711359
+     },
+     "9": {
+      "fire_cell_days": 586,
+      "pr_auc": 0.19933006319385546,
+      "prevalence": 0.018854568854568855,
+      "recall_top5%": 0.44035346097201766
+     },
+     "10": {
+      "fire_cell_days": 311,
+      "pr_auc": 0.12170809940321013,
+      "prevalence": 0.009683646780420973,
+      "recall_top5%": 0.3812316715542522
+     },
+     "11": {
+      "fire_cell_days": 12,
+      "pr_auc": 0.017018443313987268,
+      "prevalence": 0.0003861003861003861,
+      "recall_top5%": 0.0
+     },
+     "12": {
+      "fire_cell_days": 3,
+      "pr_auc": 0.0019186494496070787,
+      "prevalence": 9.341138373396438e-05,
+      "recall_top5%": 0.0
+     }
+    },
+    "district": {
+     "Faro": {
+      "fire_cell_days": 205,
+      "pr_auc": 0.07264499149048781,
+      "prevalence": 0.009058771542200618
+     },
+     "Beja": {
+      "fire_cell_days": 210,
+      "pr_auc": 0.08346990298311953,
+      "prevalence": 0.00518326545723806
+     },
+     "Set\u00fabal": {
+      "fire_cell_days": 311,
+      "pr_auc": 0.11083017739522218,
+      "prevalence": 0.012909921129099212
+     },
+     "\u00c9vora": {
+      "fire_cell_days": 173,
+      "pr_auc": 0.05279352060337476,
+      "prevalence": 0.005924657534246576
+     },
+     "Lisboa": {
+      "fire_cell_days": 355,
+      "pr_auc": 0.1578351354225883,
+      "prevalence": 0.030393835616438356
+     },
+     "Santar\u00e9m": {
+      "fire_cell_days": 441,
+      "pr_auc": 0.0634344349023083,
+      "prevalence": 0.018033122060928237
+     },
+     "Portalegre": {
+      "fire_cell_days": 153,
+      "pr_auc": 0.05758741489688125,
+      "prevalence": 0.005903916650588462
+     },
+     "Leiria": {
+      "fire_cell_days": 343,
+      "pr_auc": 0.10726535568201853,
+      "prevalence": 0.01999417079568639
+     },
+     "Castelo Branco": {
+      "fire_cell_days": 260,
+      "pr_auc": 0.08099009717144172,
+      "prevalence": 0.009757928316757366
+     },
+     "Coimbra": {
+      "fire_cell_days": 357,
+      "pr_auc": 0.12514166742397814,
+      "prevalence": 0.021262656343061345
+     },
+     "Guarda": {
+      "fire_cell_days": 303,
+      "pr_auc": 0.06050311808564273,
+      "prevalence": 0.013176777560339204
+     },
+     "Aveiro": {
+      "fire_cell_days": 534,
+      "pr_auc": 0.25692102072280915,
+      "prevalence": 0.04571917808219178
+     },
+     "Viseu": {
+      "fire_cell_days": 692,
+      "pr_auc": 0.22867187332745376,
+      "prevalence": 0.032687765706188004
+     },
+     "Bragan\u00e7a": {
+      "fire_cell_days": 262,
+      "pr_auc": 0.033380205333864134,
+      "prevalence": 0.008545335942596216
+     },
+     "Porto": {
+      "fire_cell_days": 1382,
+      "pr_auc": 0.5595395853150643,
+      "prevalence": 0.14562697576396205
+     },
+     "Vila Real": {
+      "fire_cell_days": 737,
+      "pr_auc": 0.19190028407907347,
+      "prevalence": 0.03883034773445732
+     },
+     "Braga": {
+      "fire_cell_days": 921,
+      "pr_auc": 0.34261932359264025,
+      "prevalence": 0.0788527397260274
+     },
+     "Viana do Castelo": {
+      "fire_cell_days": 572,
+      "pr_auc": 0.32647717672397775,
+      "prevalence": 0.046091861402095084
+     }
+    },
+    "size_class": {
+     "10-100 ha": {
+      "fires": 396,
+      "recall_top5%": 0.6237373737373737,
+      "recall_top25_per_day": 0.2878787878787879
+     },
+     "1-10 ha": {
+      "fires": 1297,
+      "recall_top5%": 0.5767154973014649,
+      "recall_top25_per_day": 0.284502698535081
+     },
+     "<1 ha": {
+      "fires": 8259,
+      "recall_top5%": 0.5333575493401138,
+      "recall_top25_per_day": 0.26480203414456954
+     },
+     ">=100 ha": {
+      "fires": 100,
+      "recall_top5%": 0.55,
+      "recall_top25_per_day": 0.18
+     }
+    },
+    "cause_group": {
+     "intentional": {
+      "fires": 2011,
+      "recall_top5%": 0.5266036797613127,
+      "recall_top25_per_day": 0.16658378915962208
+     },
+     "burning": {
+      "fires": 2538,
+      "recall_top5%": 0.47754137115839246,
+      "recall_top25_per_day": 0.19700551615445233
+     },
+     "negligent": {
+      "fires": 1122,
+      "recall_top5%": 0.21746880570409982,
+      "recall_top25_per_day": 0.05525846702317291
+     },
+     "unknown": {
+      "fires": 3765,
+      "recall_top5%": 0.6913678618857901,
+      "recall_top25_per_day": 0.4438247011952191
+     },
+     "rekindle": {
+      "fires": 482,
+      "recall_top5%": 0.6867219917012448,
+      "recall_top25_per_day": 0.24481327800829875
+     },
+     "natural": {
+      "fires": 134,
+      "recall_top5%": 0.04477611940298507,
+      "recall_top25_per_day": 0.014925373134328358
+     }
+    }
+   },
+   "large_fires": {
+    ">=10ha": {
+     "fires": 496,
+     "median_rank": 79.5,
+     "share_top10": 0.0967741935483871,
+     "share_top50": 0.42338709677419356,
+     "of_cells": 1036
+    },
+    ">=100ha": {
+     "fires": 100,
+     "median_rank": 136.0,
+     "share_top10": 0.05,
+     "share_top50": 0.27,
+     "of_cells": 1036
+    }
+   },
+   "calibration_daily": {
+    "bins": [
+     {
+      "bin": 0,
+      "n": 68265,
+      "events": 9,
+      "mean_pred": 4.9932000596193995e-05,
+      "obs_rate": 0.00013183915622940013,
+      "ratio_obs_pred": 2.640374001746876
+     },
+     {
+      "bin": 1,
+      "n": 38129,
+      "events": 24,
+      "mean_pred": 0.0006389394651302924,
+      "obs_rate": 0.0006294421568884577,
+      "ratio_obs_pred": 0.9851358246592296
+     },
+     {
+      "bin": 2,
+      "n": 40842,
+      "events": 64,
+      "mean_pred": 0.0020178566529614745,
+      "obs_rate": 0.0015670143479751236,
+      "ratio_obs_pred": 0.7765736707190377
+     },
+     {
+      "bin": 3,
+      "n": 16061,
+      "events": 40,
+      "mean_pred": 0.003871303876596294,
+      "obs_rate": 0.002490504949878588,
+      "ratio_obs_pred": 0.6433245824319727
+     },
+     {
+      "bin": 4,
+      "n": 52900,
+      "events": 281,
+      "mean_pred": 0.00568276695061068,
+      "obs_rate": 0.005311909262759924,
+      "ratio_obs_pred": 0.9347399442782177
+     },
+     {
+      "bin": 5,
+      "n": 39486,
+      "events": 392,
+      "mean_pred": 0.010328450008192528,
+      "obs_rate": 0.00992756926505597,
+      "ratio_obs_pred": 0.9611867470125159
+     },
+     {
+      "bin": 6,
+      "n": 46248,
+      "events": 796,
+      "mean_pred": 0.018651345264684198,
+      "obs_rate": 0.01721155509427435,
+      "ratio_obs_pred": 0.9228050229097388
+     },
+     {
+      "bin": 7,
+      "n": 36502,
+      "events": 1292,
+      "mean_pred": 0.03503169721329515,
+      "obs_rate": 0.035395320804339485,
+      "ratio_obs_pred": 1.0103798451108539
+     },
+     {
+      "bin": 8,
+      "n": 39707,
+      "events": 5313,
+      "mean_pred": 0.1294034506335001,
+      "obs_rate": 0.13380512252247714,
+      "ratio_obs_pred": 1.0340151044460444
+     }
+    ],
+    "max_ratio_bins_with_20_events": 1.554425289050327,
+    "mean_pred": 0.0215802238175409,
+    "obs_rate": 0.021714179933358016
+   },
+   "daily_probability": {
+    "pr_auc": 0.2501710599946644,
+    "roc_auc": 0.8938271816528872,
+    "topk10_precision": 0.22273972602739725
+   },
+   "bootstrap_ci": {
+    "daily_pr_auc": [
+     0.24237762801006824,
+     0.2802840216612342
+    ],
+    "topk10_precision": [
+     0.19808219178082193,
+     0.24673287671232874
+    ],
+    "topk10_recall": [
+     0.09321458572282443,
+     0.10460721095264641
+    ],
+    "topk25_precision": [
+     0.1675013698630137,
+     0.20893424657534246
+    ],
+    "topk25_recall": [
+     0.20085814739016025,
+     0.21808994442288074
+    ],
+    "topk50_precision": [
+     0.13658904109589043,
+     0.16976986301369862
+    ],
+    "topk50_recall": [
+     0.3289588201681368,
+     0.3541354301499251
+    ],
+    "adaptive1%_precision": [
+     0.42112747220606866,
+     0.46231035408482
+    ],
+    "adaptive5%_precision": [
+     0.196906627948642,
+     0.2145644607185476
+    ],
+    "daily_probability_pr_auc": [
+     0.23235839574596956,
+     0.2686579136674733
+    ]
+   },
+   "seconds": 5.6,
+   "model_meta": {
+    "region": "portugal",
+    "protocol": "current",
+    "local_tz": null,
+    "train_start": "2014-02-01 00:00:00",
+    "validation_from": "2021-01-01 00:00:00",
+    "test_from": "2022-01-01 00:00:00",
+    "sample": {
+     "n_pos": 71339,
+     "n_neg": 1426780,
+     "n_units": 2995076,
+     "unit_range": [
+      31,
+      2922
+     ],
+     "neg_sampling": "case_base"
+    },
+    "best_iteration": 280,
+    "validation_sample_pr_auc": 0.28791500417766713,
+    "store": "outputs/store/portugal",
+    "store_built": "2026-09-28T00:19:59+00:00",
+    "n_cells": 1036,
+    "trained": "2026-09-29T13:33:01+00:00",
+    "seconds": 1189.3
+   },
+   "importance_total_gain": {
+    "cell_month_prior": 0.32667,
+    "ffmc": 0.09816,
+    "hk_t7_s10": 0.0933,
+    "hk_t30_s10": 0.0606,
+    "cell_fires_365d": 0.05728,
+    "cell_prior": 0.0547,
+    "isi": 0.04662,
+    "fwi": 0.02622,
+    "days_since_cell_fire": 0.02096,
+    "hk_t7_s30": 0.01941,
+    "rain_168h": 0.01555,
+    "doy_sin": 0.0152,
+    "rhmin_24h": 0.01355,
+    "humidity": 0.01183,
+    "dc": 0.01049,
+    "doy_cos": 0.00938,
+    "rain_72h": 0.00794,
+    "nbr_month_prior": 0.00705,
+    "rain_720h": 0.00685,
+    "rain_90d": 0.00683,
+    "lat": 0.00617,
+    "dmc": 0.00578,
+    "vpdmax_24h": 0.00549,
+    "wsmax_24h": 0.00504,
+    "rain_24h": 0.00497,
+    "temp": 0.00455,
+    "bui": 0.00439,
+    "nbr1_fires_365d": 0.00429,
+    "lon": 0.00406,
+    "nbr2_fires_365d": 0.0039,
+    "tmax_24h": 0.00378,
+    "days_since_rain": 0.00344,
+    "wind_speed": 0.00344,
+    "hk_t30_s30": 0.00341,
+    "nbr_prior": 0.00314,
+    "vpd": 0.00286,
+    "eastness": 0.00266,
+    "south_share": 0.0023,
+    "northness": 0.00219,
+    "slope_mean": 0.00201,
+    "days_since_nbr_fire": 0.00183,
+    "nbr1_fires_30d": 0.00176,
+    "dow": 0.00164,
+    "nbr2_fires_30d": 0.00161,
+    "slope_p90": 0.00152,
+    "roughness_std": 0.00141,
+    "slope_std": 0.00139,
+    "roughness_mean": 0.00139,
+    "precip": 0.00086,
+    "holiday": 0.0001
+   },
+   "recipe": {
+    "groups": [
+     "time",
+     "space",
+     "prior",
+     "recency",
+     "fwi",
+     "dry",
+     "core",
+     "extremes",
+     "terrain",
+     "nbr",
+     "hawkes"
+    ],
+    "unit": "day",
+    "target": "y_any",
+    "neg_sampling": "case_base",
+    "neg_ratio": 20,
+    "monotone": false,
+    "features": [
+     "doy_sin",
+     "doy_cos",
+     "dow",
+     "holiday",
+     "lat",
+     "lon",
+     "cell_prior",
+     "cell_month_prior",
+     "days_since_cell_fire",
+     "cell_fires_365d",
+     "ffmc",
+     "dmc",
+     "dc",
+     "isi",
+     "bui",
+     "fwi",
+     "rain_24h",
+     "rain_72h",
+     "rain_168h",
+     "rain_720h",
+     "days_since_rain",
+     "rain_90d",
+     "temp",
+     "humidity",
+     "wind_speed",
+     "precip",
+     "vpd",
+     "tmax_24h",
+     "rhmin_24h",
+     "wsmax_24h",
+     "vpdmax_24h",
+     "slope_mean",
+     "slope_std",
+     "slope_p90",
+     "roughness_mean",
+     "roughness_std",
+     "eastness",
+     "northness",
+     "south_share",
+     "nbr_prior",
+     "nbr_month_prior",
+     "nbr1_fires_30d",
+     "nbr1_fires_365d",
+     "nbr2_fires_30d",
+     "nbr2_fires_365d",
+     "days_since_nbr_fire",
+     "hk_t7_s10",
+     "hk_t7_s30",
+     "hk_t30_s10",
+     "hk_t30_s30"
+    ]
+   },
+   "vs": {
+    "fwi_history": {
+     "daily_pr_auc": {
+      "diff": 0.08570674686828143,
+      "ci": [
+       0.07298713736891957,
+       0.09978971902740259
+      ],
+      "a_better_share": 1.0
+     },
+     "topk10_precision": {
+      "diff": 0.036827397260273974,
+      "ci": [
+       0.0252054794520548,
+       0.04823287671232876
+      ],
+      "a_better_share": 1.0
+     }
+    },
+    "R0": {
+     "daily_pr_auc": {
+      "diff": 0.12211765269423447,
+      "ci": [
+       0.1037729135575479,
+       0.1405241994697693
+      ],
+      "a_better_share": 1.0
+     },
+     "topk10_precision": {
+      "diff": 0.044513242009132425,
+      "ci": [
+       0.03244520547945205,
+       0.057534246575342465
+      ],
+      "a_better_share": 1.0
+     }
+    },
+    "fwi": {
+     "daily_pr_auc": {
+      "diff": 0.22878060618195567,
+      "ci": [
+       0.2117291002725817,
+       0.24653487526609885
+      ],
+      "a_better_share": 1.0
+     },
+     "topk10_precision": {
+      "diff": 0.21097351598173517,
+      "ci": [
+       0.1879315068493151,
+       0.23371232876712328
+      ],
+      "a_better_share": 1.0
+     }
+    }
+   }
+  },
+  "2023": {
+   "model": "firerisk_daily",
+   "grid": {
+    "start": "2023-01-01 00:00:00",
+    "end": "2024-01-01 00:00:00",
+    "cells": 1036,
+    "cell_set": "all",
+    "hours": 8760,
+    "days": 365,
+    "target": "y_any",
+    "include_rekindles": true,
+    "fire_cell_hours": 7113,
+    "fire_cell_days": 6223,
+    "hourly_prevalence": 0.0007837705611678215,
+    "daily_prevalence": 0.01645686782673084
+   },
+   "daily": {
+    "pr_auc": 0.19691555650644163,
+    "roc_auc": 0.8935070994690351,
+    "topk": {
+     "10": {
+      "precision": 0.1747945205479452,
+      "recall": 0.10252289892334887
+     },
+     "25": {
+      "precision": 0.14202739726027397,
+      "recall": 0.2082596818254861
+     },
+     "50": {
+      "precision": 0.11298630136986301,
+      "recall": 0.3313514382130805
+     }
+    },
+    "adaptive": {
+     "1%": {
+      "precision": 0.3183500793231095,
+      "recall": 0.19347581552305962,
+      "threshold": 0.3669946491718292,
+      "cells_per_day": 10.361643835616439
+     },
+     "5%": {
+      "precision": 0.15676733484952662,
+      "recall": 0.4762976056564358,
+      "threshold": 0.15972881019115448,
+      "cells_per_day": 51.8
+     }
+    }
+   },
+   "slices": {
+    "month": {
+     "1": {
+      "fire_cell_days": 42,
+      "pr_auc": 0.04172104143392417,
+      "prevalence": 0.0013077593722755014,
+      "recall_top5%": 0.0
+     },
+     "2": {
+      "fire_cell_days": 776,
+      "pr_auc": 0.32370856647594265,
+      "prevalence": 0.026751241036955323,
+      "recall_top5%": 0.7103377686796315
+     },
+     "3": {
+      "fire_cell_days": 389,
+      "pr_auc": 0.20420340479255336,
+      "prevalence": 0.012112342757504047,
+      "recall_top5%": 0.5078299776286354
+     },
+     "4": {
+      "fire_cell_days": 616,
+      "pr_auc": 0.14900263052393214,
+      "prevalence": 0.01981981981981982,
+      "recall_top5%": 0.4314574314574315
+     },
+     "5": {
+      "fire_cell_days": 862,
+      "pr_auc": 0.1547753108626842,
+      "prevalence": 0.0268402042595591,
+      "recall_top5%": 0.44572025052192066
+     },
+     "6": {
+      "fire_cell_days": 473,
+      "pr_auc": 0.09267886405706414,
+      "prevalence": 0.015218790218790218,
+      "recall_top5%": 0.27153558052434457
+     },
+     "7": {
+      "fire_cell_days": 967,
+      "pr_auc": 0.15442156037292964,
+      "prevalence": 0.03010960269024785,
+      "recall_top5%": 0.522911051212938
+     },
+     "8": {
+      "fire_cell_days": 1360,
+      "pr_auc": 0.2765109191325757,
+      "prevalence": 0.042346493959397186,
+      "recall_top5%": 0.6592279855247286
+     },
+     "9": {
+      "fire_cell_days": 330,
+      "pr_auc": 0.0833885931278981,
+      "prevalence": 0.010617760617760617,
+      "recall_top5%": 0.24722222222222223
+     },
+     "10": {
+      "fire_cell_days": 340,
+      "pr_auc": 0.19367870737022638,
+      "prevalence": 0.010586623489849296,
+      "recall_top5%": 0.4876237623762376
+     },
+     "11": {
+      "fire_cell_days": 35,
+      "pr_auc": 0.010783451764947983,
+      "prevalence": 0.0011261261261261261,
+      "recall_top5%": 0.0
+     },
+     "12": {
+      "fire_cell_days": 33,
+      "pr_auc": 0.013598939175704363,
+      "prevalence": 0.0010275252210736083,
+      "recall_top5%": 0.0
+     }
+    },
+    "district": {
+     "Faro": {
+      "fire_cell_days": 261,
+      "pr_auc": 0.07858620321094208,
+      "prevalence": 0.011533362792752983
+     },
+     "Beja": {
+      "fire_cell_days": 184,
+      "pr_auc": 0.03747476098071994,
+      "prevalence": 0.004541527829199062
+     },
+     "Set\u00fabal": {
+      "fire_cell_days": 273,
+      "pr_auc": 0.1282657143179582,
+      "prevalence": 0.01133250311332503
+     },
+     "\u00c9vora": {
+      "fire_cell_days": 136,
+      "pr_auc": 0.05727418235600385,
+      "prevalence": 0.004657534246575342
+     },
+     "Lisboa": {
+      "fire_cell_days": 292,
+      "pr_auc": 0.12664591591562793,
+      "prevalence": 0.025
+     },
+     "Santar\u00e9m": {
+      "fire_cell_days": 406,
+      "pr_auc": 0.07685283834014288,
+      "prevalence": 0.016601921897362502
+     },
+     "Portalegre": {
+      "fire_cell_days": 132,
+      "pr_auc": 0.05944467218326277,
+      "prevalence": 0.005093575149527301
+     },
+     "Leiria": {
+      "fire_cell_days": 316,
+      "pr_auc": 0.10555554937302737,
+      "prevalence": 0.018420285631011366
+     },
+     "Castelo Branco": {
+      "fire_cell_days": 221,
+      "pr_auc": 0.05336219997050638,
+      "prevalence": 0.00829423906924376
+     },
+     "Coimbra": {
+      "fire_cell_days": 244,
+      "pr_auc": 0.12226488349687442,
+      "prevalence": 0.014532459797498511
+     },
+     "Guarda": {
+      "fire_cell_days": 154,
+      "pr_auc": 0.022131334241536082,
+      "prevalence": 0.006697108066971081
+     },
+     "Aveiro": {
+      "fire_cell_days": 499,
+      "pr_auc": 0.16560732412660367,
+      "prevalence": 0.04272260273972603
+     },
+     "Viseu": {
+      "fire_cell_days": 535,
+      "pr_auc": 0.15599143296847326,
+      "prevalence": 0.025271610769957487
+     },
+     "Bragan\u00e7a": {
+      "fire_cell_days": 128,
+      "pr_auc": 0.027586567557646602,
+      "prevalence": 0.004174820613176778
+     },
+     "Porto": {
+      "fire_cell_days": 937,
+      "pr_auc": 0.41716436139007057,
+      "prevalence": 0.09873551106427819
+     },
+     "Vila Real": {
+      "fire_cell_days": 396,
+      "pr_auc": 0.15976141439723957,
+      "prevalence": 0.020864067439409904
+     },
+     "Braga": {
+      "fire_cell_days": 629,
+      "pr_auc": 0.2622225997544708,
+      "prevalence": 0.053852739726027395
+     },
+     "Viana do Castelo": {
+      "fire_cell_days": 480,
+      "pr_auc": 0.3224180490318213,
+      "prevalence": 0.038678485092667206
+     }
+    },
+    "size_class": {
+     "<1 ha": {
+      "fires": 6095,
+      "recall_top5%": 0.5004101722723544,
+      "recall_top25_per_day": 0.2431501230516817
+     },
+     "1-10 ha": {
+      "fires": 865,
+      "recall_top5%": 0.5872832369942197,
+      "recall_top25_per_day": 0.2728323699421965
+     },
+     "10-100 ha": {
+      "fires": 262,
+      "recall_top5%": 0.6755725190839694,
+      "recall_top25_per_day": 0.32061068702290074
+     },
+     ">=100 ha": {
+      "fires": 38,
+      "recall_top5%": 0.47368421052631576,
+      "recall_top25_per_day": 0.15789473684210525
+     }
+    },
+    "cause_group": {
+     "burning": {
+      "fires": 1976,
+      "recall_top5%": 0.5055668016194332,
+      "recall_top25_per_day": 0.21761133603238866
+     },
+     "unknown": {
+      "fires": 2362,
+      "recall_top5%": 0.6435224386113463,
+      "recall_top25_per_day": 0.39796782387806945
+     },
+     "intentional": {
+      "fires": 1522,
+      "recall_top5%": 0.5177398160315374,
+      "recall_top25_per_day": 0.18462549277266754
+     },
+     "negligent": {
+      "fires": 1067,
+      "recall_top5%": 0.2521087160262418,
+      "recall_top25_per_day": 0.06091846298031865
+     },
+     "rekindle": {
+      "fires": 256,
+      "recall_top5%": 0.6875,
+      "recall_top25_per_day": 0.359375
+     },
+     "natural": {
+      "fires": 77,
+      "recall_top5%": 0.012987012987012988,
+      "recall_top25_per_day": 0.0
+     }
+    }
+   },
+   "large_fires": {
+    ">=10ha": {
+     "fires": 300,
+     "median_rank": 65.5,
+     "share_top10": 0.09333333333333334,
+     "share_top50": 0.44333333333333336,
+     "of_cells": 1036
+    },
+    ">=100ha": {
+     "fires": 38,
+     "median_rank": 113.0,
+     "share_top10": 0.05263157894736842,
+     "share_top50": 0.2631578947368421,
+     "of_cells": 1036
+    }
+   },
+   "calibration_daily": {
+    "bins": [
+     {
+      "bin": 0,
+      "n": 30142,
+      "events": 0,
+      "mean_pred": 1.560937565712733e-08,
+      "obs_rate": 0.0,
+      "ratio_obs_pred": 0.0
+     },
+     {
+      "bin": 1,
+      "n": 33125,
+      "events": 0,
+      "mean_pred": 0.00025202671483177215,
+      "obs_rate": 0.0,
+      "ratio_obs_pred": 0.0
+     },
+     {
+      "bin": 2,
+      "n": 48241,
+      "events": 19,
+      "mean_pred": 0.0004714673492211858,
+      "obs_rate": 0.00039385584875935406,
+      "ratio_obs_pred": 0.8353830851912911
+     },
+     {
+      "bin": 3,
+      "n": 34290,
+      "events": 46,
+      "mean_pred": 0.0013614812182078577,
+      "obs_rate": 0.0013414989792942548,
+      "ratio_obs_pred": 0.9853231622688811
+     },
+     {
+      "bin": 4,
+      "n": 38610,
+      "events": 97,
+      "mean_pred": 0.0025596167106887425,
+      "obs_rate": 0.002512302512302512,
+      "ratio_obs_pred": 0.9815151236555653
+     },
+     {
+      "bin": 5,
+      "n": 25737,
+      "events": 101,
+      "mean_pred": 0.00434900869002314,
+      "obs_rate": 0.003924311302793643,
+      "ratio_obs_pred": 0.9023461626545435
+     },
+     {
+      "bin": 6,
+      "n": 54351,
+      "events": 419,
+      "mean_pred": 0.008319410415641697,
+      "obs_rate": 0.007709149785652518,
+      "ratio_obs_pred": 0.9266461684782613
+     },
+     {
+      "bin": 7,
+      "n": 32144,
+      "events": 430,
+      "mean_pred": 0.013890959028327312,
+      "obs_rate": 0.013377302140368343,
+      "ratio_obs_pred": 0.963022215607181
+     },
+     {
+      "bin": 8,
+      "n": 40246,
+      "events": 998,
+      "mean_pred": 0.026105109250098076,
+      "obs_rate": 0.02479749540326989,
+      "ratio_obs_pred": 0.9499096581324105
+     },
+     {
+      "bin": 9,
+      "n": 41254,
+      "events": 4113,
+      "mean_pred": 0.1081748733196227,
+      "obs_rate": 0.09969942308624619,
+      "ratio_obs_pred": 0.9216504723020639
+     }
+    ],
+    "max_ratio_bins_with_20_events": 1.108222145100253,
+    "mean_pred": 0.01771959341503624,
+    "obs_rate": 0.01645686782673084
+   },
+   "daily_probability": {
+    "pr_auc": 0.1906649204029615,
+    "roc_auc": 0.8931864946302024,
+    "topk10_precision": 0.17534246575342466
+   },
+   "bootstrap_ci": {
+    "daily_pr_auc": [
+     0.1791356210801782,
+     0.21524552914051645
+    ],
+    "topk10_precision": [
+     0.15558904109589042,
+     0.19822602739726028
+    ],
+    "topk10_recall": [
+     0.09643375526008201,
+     0.10910486974536433
+    ],
+    "topk25_precision": [
+     0.12727945205479452,
+     0.15897260273972602
+    ],
+    "topk25_recall": [
+     0.1959789676617979,
+     0.21952773690727057
+    ],
+    "topk50_precision": [
+     0.10153424657534246,
+     0.12589178082191782
+    ],
+    "topk50_recall": [
+     0.31683300635848594,
+     0.3462653310687254
+    ],
+    "adaptive1%_precision": [
+     0.3030237255871809,
+     0.33721762853225384
+    ],
+    "adaptive5%_precision": [
+     0.14942208135109944,
+     0.1650289641801135
+    ],
+    "daily_probability_pr_auc": [
+     0.17322989952864662,
+     0.2084219680747895
+    ]
+   },
+   "seconds": 5.1,
+   "model_meta": {
+    "region": "portugal",
+    "protocol": "current",
+    "local_tz": null,
+    "train_start": "2014-02-01 00:00:00",
+    "validation_from": "2022-01-01 00:00:00",
+    "test_from": "2023-01-01 00:00:00",
+    "sample": {
+     "n_pos": 79237,
+     "n_neg": 1584740,
+     "n_units": 3373216,
+     "unit_range": [
+      31,
+      3287
+     ],
+     "neg_sampling": "case_base"
+    },
+    "best_iteration": 315,
+    "validation_sample_pr_auc": 0.3634433275357543,
+    "store": "outputs/store/portugal",
+    "store_built": "2026-09-28T00:19:59+00:00",
+    "n_cells": 1036,
+    "trained": "2026-09-29T13:48:58+00:00",
+    "seconds": 935.9
+   },
+   "importance_total_gain": {
+    "cell_month_prior": 0.32969,
+    "ffmc": 0.09543,
+    "hk_t7_s10": 0.09277,
+    "cell_fires_365d": 0.06814,
+    "hk_t30_s10": 0.05334,
+    "cell_prior": 0.04994,
+    "isi": 0.04608,
+    "fwi": 0.0291,
+    "days_since_cell_fire": 0.02249,
+    "hk_t7_s30": 0.016,
+    "rain_168h": 0.0142,
+    "doy_sin": 0.01307,
+    "rhmin_24h": 0.01279,
+    "humidity": 0.01252,
+    "dc": 0.00988,
+    "doy_cos": 0.00902,
+    "nbr_month_prior": 0.00764,
+    "rain_72h": 0.00732,
+    "rain_90d": 0.00706,
+    "rain_720h": 0.00658,
+    "lat": 0.00647,
+    "temp": 0.00585,
+    "dmc": 0.00556,
+    "rain_24h": 0.00546,
+    "bui": 0.00508,
+    "vpdmax_24h": 0.00504,
+    "wsmax_24h": 0.00453,
+    "nbr_prior": 0.00427,
+    "tmax_24h": 0.00413,
+    "days_since_rain": 0.00403,
+    "nbr2_fires_365d": 0.00397,
+    "nbr1_fires_365d": 0.0039,
+    "wind_speed": 0.00368,
+    "hk_t30_s30": 0.00354,
+    "lon": 0.00345,
+    "vpd": 0.00342,
+    "eastness": 0.00276,
+    "south_share": 0.0024,
+    "days_since_nbr_fire": 0.00231,
+    "northness": 0.00225,
+    "slope_mean": 0.00204,
+    "nbr2_fires_30d": 0.00177,
+    "slope_p90": 0.00176,
+    "nbr1_fires_30d": 0.00174,
+    "slope_std": 0.00161,
+    "roughness_std": 0.00157,
+    "dow": 0.00156,
+    "roughness_mean": 0.0015,
+    "precip": 0.00115,
+    "holiday": 0.00014
+   },
+   "recipe": {
+    "groups": [
+     "time",
+     "space",
+     "prior",
+     "recency",
+     "fwi",
+     "dry",
+     "core",
+     "extremes",
+     "terrain",
+     "nbr",
+     "hawkes"
+    ],
+    "unit": "day",
+    "target": "y_any",
+    "neg_sampling": "case_base",
+    "neg_ratio": 20,
+    "monotone": false,
+    "features": [
+     "doy_sin",
+     "doy_cos",
+     "dow",
+     "holiday",
+     "lat",
+     "lon",
+     "cell_prior",
+     "cell_month_prior",
+     "days_since_cell_fire",
+     "cell_fires_365d",
+     "ffmc",
+     "dmc",
+     "dc",
+     "isi",
+     "bui",
+     "fwi",
+     "rain_24h",
+     "rain_72h",
+     "rain_168h",
+     "rain_720h",
+     "days_since_rain",
+     "rain_90d",
+     "temp",
+     "humidity",
+     "wind_speed",
+     "precip",
+     "vpd",
+     "tmax_24h",
+     "rhmin_24h",
+     "wsmax_24h",
+     "vpdmax_24h",
+     "slope_mean",
+     "slope_std",
+     "slope_p90",
+     "roughness_mean",
+     "roughness_std",
+     "eastness",
+     "northness",
+     "south_share",
+     "nbr_prior",
+     "nbr_month_prior",
+     "nbr1_fires_30d",
+     "nbr1_fires_365d",
+     "nbr2_fires_30d",
+     "nbr2_fires_365d",
+     "days_since_nbr_fire",
+     "hk_t7_s10",
+     "hk_t7_s30",
+     "hk_t30_s10",
+     "hk_t30_s30"
+    ]
+   },
+   "vs": {
+    "fwi_history": {
+     "daily_pr_auc": {
+      "diff": 0.07191869835041591,
+      "ci": [
+       0.05614720476626702,
+       0.08543644198014419
+      ],
+      "a_better_share": 1.0
+     },
+     "topk10_precision": {
+      "diff": 0.04409771689497717,
+      "ci": [
+       0.03218493150684932,
+       0.05452054794520547
+      ],
+      "a_better_share": 1.0
+     }
+    },
+    "R0": {
+     "daily_pr_auc": {
+      "diff": 0.0916834920601566,
+      "ci": [
+       0.07590518826068623,
+       0.10858483301660751
+      ],
+      "a_better_share": 1.0
+     },
+     "topk10_precision": {
+      "diff": 0.021425570776255707,
+      "ci": [
+       0.010136986301369874,
+       0.0332945205479452
+      ],
+      "a_better_share": 1.0
+     }
+    },
+    "fwi": {
+     "daily_pr_auc": {
+      "diff": 0.17269286976543893,
+      "ci": [
+       0.15389446343915703,
+       0.18964067517334748
+      ],
+      "a_better_share": 1.0
+     },
+     "topk10_precision": {
+      "diff": 0.1674200913242009,
+      "ci": [
+       0.14684931506849316,
+       0.18811643835616434
+      ],
+      "a_better_share": 1.0
+     }
+    }
+   }
+  }
+ },
+ "mean": {
+  "daily_pr_auc": 0.2193779314881626,
+  "daily_roc_auc": 0.8880762354594294,
+  "precision_10_per_day": 0.19392349726775954,
+  "precision_top1%_celldays": 0.3622474713667004,
+  "median_rank_ge100ha": 182.0,
+  "beats_fwi_history_every_year": true
+ }
+}
